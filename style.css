@@ -1,0 +1,271 @@
+/* VARIABLES */
+
+:root {
+    --gold: #c6a96d;
+    --bg: #fdfaf6;
+    --text: #4a4a4a;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1520857014576-2c4f4c972b57') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.logo {
+    border: 1px solid white;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Great Vibes';
+    font-size: 2rem;
+}
+
+.hero h1 {
+    font-family: 'Great Vibes';
+    font-size: 4.5rem;
+}
+
+.fecha {
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+/* ================= RELOJ ================= */
+
+.countdown {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    z-index: 2;
+}
+
+.time-box {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.time-box:hover {
+    transform: translateY(-5px);
+}
+
+.time-box span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* ================= SECCIONES ================= */
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* ================= FRASE ================= */
+
+.versiculo {
+    max-width: 600px;
+    margin: auto;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* ================= PADRES ================= */
+
+.parents-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.bendicion {
+    font-family: 'Great Vibes';
+    font-size: 2.3rem;
+    color: var(--gold);
+    margin: 30px 0;
+}
+
+.parents-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.parents-block {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.parents-block .label {
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.separator {
+    font-family: 'Great Vibes';
+    font-size: 2rem;
+    color: var(--gold);
+}
+
+/* ================= ORNAMENTOS ================= */
+
+.ornament {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--gold);
+}
+
+.line {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+}
+
+/* ================= GALERÍA ================= */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.gallery img {
+    width: 280px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    transform: rotate(-2deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.gallery img:nth-child(2) {
+    transform: rotate(2deg);
+}
+
+/* ================= CARDS ================= */
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* ================= GRID ================= */
+
+.padrinos-grid,
+.event-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ================= BOTÓN ================= */
+
+button {
+    padding: 15px 35px;
+    background: var(--gold);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #b89655;
+}
+
+/* ================= MENSAJE ================= */
+
+#confirmation-msg {
+    display: none;
+    margin-top: 15px;
+}
+
+/* ================= ANIMACIONES ================= */
+
+.fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(min-width:768px){
+
+    .gallery {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .padrinos-grid,
+    .event-grid {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .parents-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nuestra Boda</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero fade">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <div class="logo">N & J</div>
+        <h1>Naydelin & Jared</h1>
+        <p class="fecha">03 · Octubre · 2026</p>
+    </div>
+
+    <div class="countdown">
+        <div class="time-box"><span id="days">00</span><p>Días</p></div>
+        <div class="time-box"><span id="hours">00</span><p>Horas</p></div>
+        <div class="time-box"><span id="minutes">00</span><p>Min</p></div>
+    </div>
+</section>
+
+<!-- FRASE -->
+<section class="section fade">
+    <p class="versiculo">
+        “Mejores son dos que uno… porque si caen, el uno levantará a su compañero…
+        y cordón de tres dobleces no se rompe pronto.”
+    </p>
+</section>
+
+<!-- PADRES (AQUÍ VA LA BENDICIÓN) -->
+<section class="parents-section fade">
+
+    <div class="ornament">
+        <span>✦</span>
+        <div class="line"></div>
+        <span>❦</span>
+        <div class="line"></div>
+        <span>✦</span>
+    </div>
+
+    <h2 class="bendicion">Con la bendición de</h2>
+
+    <div class="parents-container">
+        <div class="parents-block">
+            <p class="label">Padres de la novia</p>
+            <p>Rodrigo Vicente Leyva Salazar</p>
+            <p>Victoria Palafox Rojas</p>
+        </div>
+
+        <div class="separator">&</div>
+
+        <div class="parents-block">
+            <p class="label">Padres del novio</p>
+            <p>Benito Pacheco Rojas</p>
+            <p>Tomasa Juárez García</p>
+        </div>
+    </div>
+
+    <div class="ornament">
+        <span>✦</span>
+        <div class="line"></div>
+        <span>❦</span>
+        <div class="line"></div>
+        <span>✦</span>
+    </div>
+
+</section>
+
+<!-- GALERÍA -->
+<section class="gallery fade">
+    <img src="https://via.placeholder.com/300x400">
+    <img src="https://via.placeholder.com/300x400">
+</section>
+
+<!-- PADRINOS (YA SIN ESA FRASE) -->
+<section class="section fade">
+    <h2>Padrinos</h2>
+
+    <div class="padrinos-grid">
+
+        <div class="card">
+            <h3>Anillos</h3>
+            <p>Claudio Francisco Gutiérrez Sandoval</p>
+            <p>María Azucena Mora Lima</p>
+        </div>
+
+        <div class="card">
+            <h3>Lazo y Arras</h3>
+            <p>Willebaldo Andrade Hernández</p>
+            <p>Rosa Contreras Juárez</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- EVENTOS -->
+<section class="section fade">
+    <h2>Detalles del evento</h2>
+
+    <div class="event-grid">
+        <div class="card">
+            <h3>Ceremonia</h3>
+            <p>Parroquia del Señor del Perdón</p>
+            <a href="#">Ver ubicación</a>
+        </div>
+
+        <div class="card">
+            <h3>Recepción</h3>
+            <p>Quinta San Román</p>
+            <a href="#">Ver ubicación</a>
+        </div>
+    </div>
+</section>
+
+<!-- RSVP -->
+<section class="section fade">
+    <h2>Confirma tu asistencia</h2>
+
+    <button id="rsvp-btn" onclick="confirmarAsistencia()">
+        Confirmar asistencia
+    </button>
+
+    <p id="confirmation-msg">✨ Tu lugar ha sido reservado ✨</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
